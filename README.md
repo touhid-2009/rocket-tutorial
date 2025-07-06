@@ -52,7 +52,7 @@
 bind_addr = ":4040"                       # Address and port for the server to listen on (mandatory).
 bind_addrs = [":4040", ":4041"]           # Multiple addresses and ports to listen on.
 transport = "tcpmux"                      # Transport protocol to use ("tcpmux", "wsmux") (mandatory).
-default_token = "musix"                   # Default authentication token for secure communication (mandatory).
+default_token = "musix"                   # Default authentication token for secure communication.
 log_level = "info"                        # Log level ("panic", "fatal", "error", "warn", "info", "debug", "trace") (optional, default: "info").
 so_rcvbuf = 4194304                       # Socket receive buffer size in bytes (default 0, determined by kernel).
 so_sndbuf = 1094304                       # Socket send buffer size in bytes (default 0, determined by kernel).
@@ -122,7 +122,7 @@ remote_addrs = ["127.0.0.1:4040", "127.0.0.1:4041"] # List of remote server addr
 local_addrs = ["127.0.0.1:0"]                  # Local addresses to bind outgoing connections (optional).
 edge_ip = "127.0.0.2"                           # Specific local IP to use for outgoing wsmux connections (optional).
 transport = "tcpmux"                            # Transport protocol to use ("tcpmux" or "wsmux") (mandatory).
-default_token = "musix"                         # Default authentication token for secure communication (mandatory).
+default_token = "musix"                         # Default authentication token for secure communication.
 log_level = "info"                              # Log level ("panic", "fatal", "error", "warn", "info", "debug", "trace") (optional, default: "info").
 so_rcvbuf = 1094304                             # Socket receive buffer size in bytes (default 0, determined by kernel).
 so_sndbuf = 4194304                             # Socket send buffer size in bytes (default 0, determined by kernel).
